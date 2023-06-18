@@ -9,6 +9,10 @@ readme = "README.md"
 license = "MIT"
 repository = "https://github.com/cargo-public-api/cargo-public-api-benchmarks"
 
+# As recommended by cargo flamegraph
+[profile.release]
+debug = true
+
 [dependencies.public-api]
 path = "/home/martin/src/cargo-public-api/public-api"
 version = "0.31.2"
