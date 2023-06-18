@@ -1,0 +1,25 @@
+[package]
+edition = "2021"
+name = "cargo-public-api-benchmarks"
+version = "0.1.0"
+description = "Benchmarks for https://github.com/Enselic/cargo-public-api and related crates"
+homepage = "https://github.com/cargo-public-api/cargo-public-api-benchmarks"
+documentation = "https://github.com/cargo-public-api/cargo-public-api-benchmarks"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/cargo-public-api/cargo-public-api-benchmarks"
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+[dev-dependencies.public-api]
+path = "/home/martin/src/cargo-public-api/public-api"
+version = "0.31.2"
+
+[dev-dependencies.rustdoc-json]
+path = "/home/martin/src/cargo-public-api/rustdoc-json"
+version = "0.8.3"
+
+[[bench]]
+name = "json_processing"
+harness = false
